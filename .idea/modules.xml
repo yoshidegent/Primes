@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/JavascriptAssignment.iml" filepath="$PROJECT_DIR$/.idea/JavascriptAssignment.iml" />
+      <module fileurl="file://$USER_HOME$/Workspace/Primes/.idea/Primes.iml" filepath="$USER_HOME$/Workspace/Primes/.idea/Primes.iml" />
     </modules>
   </component>
 </project>

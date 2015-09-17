@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    const MAX_NUMBER = 1000;
+    const MAX_NUMBER = 2000;
 
     var showGridWithColloredPrimes = function(maxNumber) {
 
