@@ -1,14 +1,14 @@
 $(document).ready(function(){
 
-    const MAX_NUMBER = 2000;
-
     var showGridWithColloredPrimes = function(maxNumber) {
 
         var table = $("#table");
 
+        table.empty();
+
         var numberOfColumns = Math.sqrt(maxNumber);
 
-        for(var i=0; i<=maxNumber;)
+        for(var i=1; i<=maxNumber;)
         {
             var row = $("<tr></tr>");
             table.append(row);
@@ -46,5 +46,16 @@ $(document).ready(function(){
         return true;
     };
 
-    showGridWithColloredPrimes(MAX_NUMBER);
+    var maxNumberInput = $('#maxNumberInput');
+
+    maxNumberInput.on('input', function(){
+        var maxNumber = maxNumberInput.val();
+
+        maxNumber = parseInt(maxNumber)
+
+        console.log(typeof maxNumber);
+
+        if(typeof maxNumber == "number")
+            showGridWithColloredPrimes(maxNumber);
+    });
 });
